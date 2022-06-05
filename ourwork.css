@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-
-
 html {
     height: 100%;
 }
@@ -23,11 +21,6 @@ body {
     background-color: #FCF6F5FF;
     margin: 0 auto;
     height: 100%;
-    padding-bottom: 30px;
-}
-
-p {
-    letter-spacing: 1px;
 }
 
 a {
@@ -35,8 +28,9 @@ a {
 }
 
 header {
-    height: 8rem;
+    height: auto;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .title {
@@ -76,6 +70,179 @@ nav{
     color: #990011FF;
 }
 
+/* Box 1 */
+
+.box-1 img{
+    height: 43vh;
+    width: 25vw;
+    flex: 1;
+    margin: 20px 0px 0px 20px;
+    border-radius: 10px;
+    scale: 0.5;
+}
+
+.box-1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%) inset;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+
+.box-1 p {
+    flex: 1;
+    height: auto;
+    width: auto;
+    padding: 10px 30px 0px 30px;
+    font-size: 20px;
+}
+
+/* Box 2 */
+
+.box-2 img{
+    order: 2;
+    height: 43vh;
+    width: 25vw;
+    flex: 1;
+    margin: 20px 20px 0px 0px;
+    border-radius: 10px;
+    scale: 0.5;
+}
+
+.box-2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%) inset;
+    padding-bottom: 2rem;
+}
+
+.box-2 p {
+    order: 1;
+    flex: 1;
+    height: auto;
+    width: auto;
+    padding: 10px 30px 0px 30px;
+    font-size: 20px;
+    
+}
+
+/* Box 3 */
+
+.box-3 img{
+    height: 43vh;
+    width: 25vw;
+    flex: 1;
+    margin: 20px 0px 0px 20px;
+    border-radius: 10px;
+    scale: 0.5;
+}
+
+.box-3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%) inset;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+
+.box-3 p {
+    flex: 1;
+    height: auto;
+    width: auto;
+    padding: 10px 30px 0px 30px;
+    font-size: 20px;
+    
+}
+
+/* Box 4 */
+
+.box-4 img{
+    order: 2;
+    height: 43vh;
+    width: 25vw;
+    flex: 1;
+    margin: 20px 20px 0px 0px;
+    border-radius: 10px;
+    scale: 0.5;
+}
+
+.box-4 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%) inset;
+    padding-bottom: 2rem;
+}
+
+.box-4 p {
+    order: 1;
+    flex: 1;
+    height: auto;
+    width: auto;
+    padding: 10px 30px 0px 30px;
+    font-size: 20px;
+    
+}
+
+/* Footer */
+
+footer {
+    
+    background-color: #d8d8d8f3;
+    font-size: smaller;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.footer-text {
+    width: 35%;
+}
+
+.footer-text h4 {
+    padding-bottom: 7px;
+}
+  
+.footer-links h4 {
+    padding-bottom: 7px;
+}
+
+.footer-text p {
+    color: #474747f3;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #474747f3;
+}
+
+.footer-links a:hover {
+    color: #990011FF;
+}
+
+.bottom-footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #990011FF;
+}
+
 /* Text Styles */
 
 .text-lg {
@@ -96,6 +263,76 @@ nav{
 
 @media (max-width: 1240px) {
     .text-lg {
-        font-size: 28px;
+      font-size: 30px;
+    }
+}
+  
+@media (max-width: 1100px) {
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-1 img {
+        height: auto;
+        width: 25rem;
+    }
+    .box-1 p {
+        text-align: center;
+    }
+    .box-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-2 img {
+        order: 1;
+        height: auto;
+        width: 25rem;
+    }
+    .box-2 p {
+        text-align: center;
+    }
+    .box-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-3 img {
+        height: auto;
+        width: 25rem;
+    }
+    .box-3 p {
+        text-align: center;
+    }
+    .box-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-4 img {
+        order: 1;
+        height: auto;
+        width: 25rem;
+    }
+    .box-4 p {
+        text-align: center;
+    }
+}
+  
+@media (max-width: 900px) {
+    .text-lg {
+     font-size: 23px;
+    }
+    
+}
+  
+@media (max-width: 800px) {
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    .navbar li{
+      margin: 0px 0px 7px 0px;
+    }
+    .text-md {
+      font-size: 24px;
     }
 }

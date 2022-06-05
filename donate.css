@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-
-
 html {
     height: 100%;
 }
@@ -35,15 +33,17 @@ p {
 a {
     letter-spacing: 1px;
 }
-a:hover {
+
+.btn-container a:hover {
   background-color: #FCF6F5FF;
   color: #990011FF;
   transition: 0.5s;
 }
 
 header {
-    height: 8rem;
+    height: auto;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .title {
@@ -83,8 +83,6 @@ nav{
     color: #990011FF;
 }
 
-
-
 /* Donate Section */
 
 .main-container {
@@ -101,7 +99,6 @@ nav{
     margin-bottom: 30px;
     padding-top: 10px;
 }
-
 
 .container {
   display: flex;
@@ -266,6 +263,58 @@ nav{
     border-color: #990011FF transparent transparent #990011FF;
 }
 
+/* Footer */
+
+footer {
+  margin-top: 5rem;
+  background-color: #d8d8d8f3;
+  font-size: small;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+.footer-text {
+  width: 35%;
+}
+
+.footer-text h4 {
+  padding-bottom: 7px;
+}
+
+.footer-links h4 {
+  padding-bottom: 7px;
+}
+
+.footer-text p {
+  color: #474747f3;
+}
+
+.footer-links ul{
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #474747f3;
+}
+
+.footer-links a:hover {
+  color: #990011FF;
+}
+
+.bottom-footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #990011FF;
+}
+
 /* Donate Button */
 
 .btn-container {
@@ -287,27 +336,47 @@ nav{
     margin: 100px;
 }
 
-
 /* Text Styles */
 
 .text-lg {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 38px;
-    font-weight: 400;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 38px;
+  font-weight: 400;
 }
 .text-md {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 28px;
-    font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
 }
 .text-sm {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 @media (max-width: 1240px) {
-    .text-lg {
-        font-size: 28px;
-    }
+  .text-lg {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-lg {
+   font-size: 23px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navbar li{
+    margin: 0px 0px 7px 0px;
+  }
+  .text-md {
+    font-size: 24px;
+  }
 }
